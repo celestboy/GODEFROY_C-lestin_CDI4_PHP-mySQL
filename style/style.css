@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-color: #cfe1ed;
+}
+
+h3 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: max(15px, 2.5vw);
+  cursor: default;
+}
+
+
+.container {
+  margin: auto;
+  max-width: 70%;
+  margin-top: 20px;
+}
+
+nav {
+  height: min-content;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1da1f2;
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  transition: 0.2s;
+} nav ul li a:hover {color: #0c76b8; font-weight: 700; text-decoration: underline;}
+
+#tweetForm {
+  display: flex;
+  margin-bottom: 2vw;
+}
+
+
+#tweetForm textarea {
+  width: 90%;
+  height: max-content;
+  padding: 15px;
+  border: 1.5px solid #b8c3cb;
+  background-color: #f4eeee;
+  border-radius: 10px;
+  resize: none;
+  transition: 0.2s;
+} #tweetForm textarea:hover {background-color: #f2e9e9}
+
+#tweetForm button {
+  background-color: #1da1f2;
+  border: 1px solid #cfe1ed;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 3vw;
+  align-self: center;
+  margin-left: 1vw;
+  font-size: 1vw;
+  transition: 0.2s;
+} #tweetForm button:hover {background-color: #0080cf; color: #f1f3db; border: 1px solid rgb(85, 85, 245);}
+ 
+.tweets .tweet {
+  background-color: rgb(250, 250, 250);
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  width: 80%;
+  padding: 0 0 10px 0;
+
+}
+
+.tweets h1 {
+  margin: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tweets p {
+  margin: 20px 0 0 20px;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#delete-button {
+  background-color: rgb(238, 159, 159);
+  color: red;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 20px 20px;
+  transition: 0.2s;
+} #delete-button:hover {background-color: red; color: white;}
